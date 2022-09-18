@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+
+    if( n >= 0)
+    cout<<n;
+    else
+    {
+        if(abs(n%10) >= (abs(n/10))%10)
+        cout<<n/10;
+        else
+        {
+            int last = abs(n%10);
+            cout<<((n/10)/10)*10 - last;
+        } 
+
+    }
+
+    return 0;
+}
